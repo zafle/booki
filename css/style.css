@@ -4,9 +4,23 @@
 }
 
 :root {
+    /* colors */
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    /* Text configuration */
+    --body-font-weight: 400;
+    --title-font-weight: 700;
+
+    --body-font-size: 1rem;
+    --body-small-font-size: 0.875rem;
+    --nav-font-size: 1rem;
+    --title-font-size: 1.375rem;
+
+    /* --body-line-height: 1.5rem;
+    --body-small-line-height: 1.5rem;
+    --nav-line-height: 5.375rem;
+    --title-line-height: 1.75rem; */
 }
 
 .fa-solid {
@@ -16,6 +30,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -28,6 +43,11 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
 }
 
 .section-title {
@@ -56,6 +76,34 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Header ***********/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    width: 60px;
+    margin: 30px 0;
+}
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+}
+.main-menu li:not(:last-child) {
+    margin-right: 4.25rem;
+}
+.main-menu a {
+    display: block;
+    font-size: var(--nav-font-size);
+    padding-top: 14px;
+
+}
+a.active-entry {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 /****** Hebergements And Populaires ***********/
