@@ -99,9 +99,9 @@ header {
     display: block;
     font-size: var(--nav-font-size);
     padding-top: 14px;
-
 }
-a.active-entry {
+.main-menu a.active-entry,
+.main-menu a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
