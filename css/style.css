@@ -82,7 +82,7 @@ header {
     justify-content: space-between;
 }
 .logo {
-    width: 60px;
+    width: 3.75rem;
     margin: 30px 0;
 }
 .main-menu ul {
@@ -192,15 +192,15 @@ header {
 .info-icon {
     border: 1px solid var(--filter-border-color);
     border-radius: 100%;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     line-height: 20px;
     text-align: center;
     font-size: 0.7rem;
     margin-right: 10px;
 }
 .info-text {
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 /****** Hebergements And Populaires And Activites ***********/
@@ -272,7 +272,7 @@ header {
     border-radius: 20px 20px 0 0;
 }
 .hebergements-cards .card-content {
-    padding: 10px 15px 15px 15px;
+    padding: 5px 10px 10px 10px;
 }
 .hebergements-cards .card-title {
     margin: 0 0 8px 0;
@@ -280,8 +280,15 @@ header {
 .hebergements-cards .card-subtitle {
     margin-bottom: 8px;
 }
+.hebergements-cards .card-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0.875rem;
+    width: 5.1rem;
+}
 .hebergements-cards .card-rating i {
-    font-size: 0.83rem;
+    font-size: 0.85rem;
 }
 .hebergements .more-link {
     font-size: var(--body-large-font-size);
@@ -320,6 +327,13 @@ header {
 }
 .populaires-cards .card-subtitle {
     margin: 0;
+}
+.populaires-cards .card-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 0.75rem;
+    width: 4.5rem;
 }
 .populaires-cards .card-rating i {
     font-size: 0.75rem;
