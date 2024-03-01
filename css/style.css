@@ -354,9 +354,10 @@ footer {
     background-color: var(--main-bg-color);
     padding: 20px;
     margin-top: 35px;
+    justify-content: stretch;
 }
 .footer-menu {
-    flex-grow: 1;
+    flex: 33% 1 0;
 }
 .footer-title {
     font-size: var(--body-large-font-size);
