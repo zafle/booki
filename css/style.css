@@ -25,14 +25,10 @@
     --card-title-font-size: 1rem;
     --card-subtitle-font-size: 0.875rem;
 
-    --body-font-weight: 400;
+    --body-font-weight: 500;
     --bold-font-weight: 700;
 
     --form-and-filter-line-height: 3.125rem;
-}
-
-.fa-solid {
-    color: var(--main-color);
 }
 
 body {
@@ -46,8 +42,13 @@ body {
     max-width: 1440px;
     padding: 0 50px;
 }
+
 section {
     margin-top: 35px;
+}
+
+a, p, li, span {
+    font-weight: var(--body-font-weight);
 }
 
 a {
@@ -63,6 +64,10 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.fa-solid {
+    color: var(--main-color);
 }
 
 .section-title {
@@ -342,6 +347,26 @@ header {
 .activites .card-title {
     margin: 0;
 }
+
+/****** Footer ***********/
+footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    margin-top: 35px;
+}
+.footer-menu {
+    flex-grow: 1;
+}
+.footer-title {
+    font-size: var(--body-large-font-size);
+    margin-bottom: 15px;
+}
+.footer-menu li {
+    font-size: var(--body-font-size);
+    margin-top: 15px;
+}
+
 
 
 
