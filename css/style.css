@@ -18,6 +18,7 @@
     --body-font-size: 1rem;
     --body-small-font-size: 0.875rem;
     --body-large-font-size: 1.125rem;
+    --body-xxs-font-size: 0.815rem;
     --form-font-size: 1.125rem;
     --filter-font-size: 1.065rem;
     --nav-font-size: 1rem;
@@ -116,6 +117,9 @@ header {
     line-height: var(--form-and-filter-line-height);
     text-align: center;
 }
+.search-submit-mobile {
+    display: none;
+}
 .search-form {
     display: flex;
     margin: 35px 0;
@@ -172,6 +176,9 @@ header {
 .filter-form {
     margin: 35px 0;
 }
+.filter-list {
+    column-gap: 15px;
+}
 .filter-item {
     border-radius: 25px;
     border: 2px solid var(--filter-border-color);
@@ -181,8 +188,7 @@ header {
 .filter-item:hover {
     background-color: var(--filter-bg-color);
 }
-.filter-title,
-.filter-item:not(:last-of-type) {
+.filter-title {
     margin-right: 15px;
 }
 .filter-icon {
@@ -393,6 +399,12 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    /****** Filter ******/
+    .filter-form {
+        flex-direction: column;
+    }
+
+
     /****** Hebergements And Populaires***********/
     .hebergements-and-populaires {
         flex-direction: column;
@@ -419,6 +431,14 @@ footer {
         width: 30%;
     }
 
+    .populaires-cards .card-title {
+        font-size: var(--body-small-font-size);
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: var(--body-xxs-font-size);
+    }
+
     /****** Activities ***********/
     .activites img {
         height: 12.5rem;
@@ -428,18 +448,37 @@ footer {
     footer {
         column-gap: 30px;
     }
-
-
-    /* .populaires-cards .card-title {
-        font-size: 14px;
+    .footer-title {
+        font-size: var(--body-font-size);
+    }
+    .footer-menu li {
+        font-size: var(--body-small-font-size);
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    } */
+}
+
+/* Exception rule for filter breakpoint */
+@media (max-width: 802px) {
+    /****** Filter ******/
+    .filter-list {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 10px;
+        max-width: 370px;
+    }
+    .filter-item {
+        font-size: var(--body-small-font-size);
+        min-width: 180px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-    /* ... */
+
+    /****** Header ***********/
+
+
+
+
 }
