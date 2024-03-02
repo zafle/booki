@@ -457,12 +457,6 @@ footer {
 
 }
 
-/* Exception rule for activites breakpoint */
-@media (max-width: 863px) {
-    .activite-cards .card-wrap {
-        width: 40%;
-    }
-}
 
 /* Exception rule for filter breakpoint */
 @media (max-width: 802px) {
