@@ -535,6 +535,10 @@ footer {
     .filter-text {
         font-size: var(--body-small-font-size);
     }
+    .filter-icon {
+        width: 22px;
+        text-align: center;
+    }
     .info-icon {
         flex-shrink: 0;
     }
