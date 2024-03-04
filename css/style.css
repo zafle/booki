@@ -86,7 +86,8 @@ header {
 .main-menu ul {
     display: flex;
     flex-direction: row;
-    column-gap: 68px;
+    -moz-column-gap: 68px;
+         column-gap: 68px;
 }
 .main-menu a {
     display: block;
@@ -174,7 +175,8 @@ header {
     margin: 35px 0;
 }
 .filter-list {
-    column-gap: 15px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
 }
 .filter-item {
     height: 50px;
@@ -223,11 +225,13 @@ header {
 .card {
     background-color: white;
     border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .card-title {
@@ -423,7 +427,8 @@ footer {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        column-gap: 20px;
+        -moz-column-gap: 20px;
+             column-gap: 20px;
     }
 
     .populaires-cards .card-wrap {
@@ -445,7 +450,8 @@ footer {
 
     /****** Footer ***********/
     footer {
-        column-gap: 30px;
+        -moz-column-gap: 30px;
+             column-gap: 30px;
     }
     .footer-title {
         font-size: var(--body-font-size);
@@ -479,7 +485,8 @@ footer {
         display: block;
     }
     .main-menu ul {
-        column-gap: 0;
+        -moz-column-gap: 0;
+             column-gap: 0;
     }
     .main-menu li {
         width: 50%;
@@ -513,7 +520,8 @@ footer {
         border: none;
         background-color: var(--main-color);
         border-radius: 15px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     .search-submit-mobile i {
         color: white;
@@ -527,7 +535,8 @@ footer {
     .filter-list {
         flex-wrap: wrap;
         row-gap: 15px;
-        column-gap: 10px;
+        -moz-column-gap: 10px;
+             column-gap: 10px;
         max-width: 335px;
     }
     .filter-item {
